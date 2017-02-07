@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66666666">
+    <RelativeLayout
+        android:id="@+id/rl_city_dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="#66666666">
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="600dp"
+        android:layout_height="340dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/bg_dialog_brim"
+            android:paddingLeft="8dp">
+
+
+            <TextView
+                android:id="@+id/dialog_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="当前会议室"
+                android:textColor="@color/mainRed"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/city_zh_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/city_label"
+                android:layout_marginLeft="16dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="北京"
+                android:textColor="#FEFBFB"
+                android:textSize="24dp" />
+
+           <!-- <TextView
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/city_zh_name"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:text="(Beijing)"
+                android:textColor="@color/bluePrimary"
+                android:textSize="16dp" />-->
+
+            <TextView
+                android:id="@+id/city_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/city_close"
+                android:gravity="center"
+                android:text="当前空闲"
+                android:textColor="#FEFBFB"
+                android:textSize="24dp" />
+
+            <ImageButton
+                android:id="@+id/city_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_close" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/city_select_dialog_text"
+                    android:textColor="#C25C52"
+                    android:drawablePadding="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="12dp"
+                    android:drawableLeft="@drawable/ic_house"
+                    android:text="会议室:" />
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/city_select_dialog_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_status"
+                    android:text="城市" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:paddingLeft="2dp"
+                style="@style/city_select_dialog_text"
+                android:layout_width="wrap_content"
+                android:textColor="#C25C52"
+                android:drawablePadding="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/ic_gps"
+                android:text="方    位:" />
+
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/city_select_dialog_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/tv_address"
+                android:text="国付宝(东区)" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/tv_accommodate"
+                    style="@style/city_select_dialog_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="12dp"
+                    android:textColor="#C25C52"
+                    android:drawableLeft="@drawable/ic_people"
+                    android:drawablePadding="2dp"
+                    android:text="容    纳:" />
+
+                <TextView
+                    android:id="@+id/dialog_contains"
+                    style="@style/city_select_dialog_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_accommodate"
+                    android:text="24人" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/city_select_dialog_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textColor="#C25C52"
+                    android:drawableLeft="@drawable/ic_device"
+                    android:drawablePadding="2dp"
+                    android:text="设备清单:" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/room_screen"
+                style="@style/city_select_dialog_text"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/sel_city_device_status"
+                android:text="幕布" />
+
+            <TextView
+                android:id="@+id/room_computer"
+                style="@style/city_select_dialog_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/sel_city_device_status"
+                android:text="显示屏" />
+
+            <TextView
+                android:id="@+id/room_projection"
+                style="@style/city_select_dialog_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/sel_city_device_status"
+                android:text="投影仪" />
+
+            <TextView
+                android:id="@+id/room_port"
+                style="@style/city_select_dialog_text"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/sel_city_device_status"
+                android:text="端口" />
+
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/detailMeeting"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_meeting_details"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/selectCity"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_meeting_reserve"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_marginBottom="40dp"
+            android:paddingBottom="18dp">
+
+            <Button
+                android:id="@+id/selectCity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="84dp"
+                android:paddingRight="12dp"
+                android:text="详细预定"
+                android:textColor="@color/white"
+                android:textSize="26dp" />
+
+            <Button
+                android:id="@+id/detailMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/bluePrimary"
+                android:layout_marginLeft="12dp"
+                android:paddingRight="84dp"
+                android:text="会议列表"
+                android:textColor="@color/white"
+                android:textSize="26dp" />
+
+
+        </RelativeLayout>-->
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

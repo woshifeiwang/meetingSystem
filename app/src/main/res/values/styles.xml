@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="QuickOrderDialog" parent="android:style/Theme.Dialog">
+
+        <!--<item name="android:background">#50827E7D</item> &lt;!&ndash; 设置自定义布局的背景透明 &ndash;&gt;-->
+        <item name="android:windowBackground">@android:color/transparent
+        </item>  <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="checkboxSelect">
+        <item name="buttonTint">@color/mainBlue</item>
+        <item name="android:textColor">@color/mainBlue</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="checkboxSelectMobile">
+        <item name="buttonTint">@color/mainBlue</item>
+        <item name="android:textColor">@color/mainBlue</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="checkboxSelect2" parent="@style/Theme.AppCompat.Light">
+        <item name="buttonTint">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="timeLineText">
+        <item name="android:textColor">@color/itemColor</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+
+    <style name="city_status_label">
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="city_label_style">
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">@color/itemColor</item>
+    </style>
+
+
+    <style name="city_select_dialog_text">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+    <style name="room_name_label_style">
+        <item name="android:background">@color/mainBlue</item>
+        <item name="android:drawableLeft">@drawable/ic_current_meeting_room</item>
+        <item name="android:drawablePadding">24dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="mainBtnStyle">
+        <item name="android:textSize">@dimen/btn_font_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+
+    <style name="style_quick_checkbox">
+        <item name="buttonTint">@color/white</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cityNames">
+        <item>海口</item>
+        <item>西安</item>
+        <item>贵州</item>
+        <item>天津</item>
+        <item>南昌</item>
+        <item>广州</item>
+        <item>郑州</item>
+        <item>长沙</item>
+        <item>重庆</item>
+        <item>太原</item>
+        <item>沈阳</item>
+        <item>杭州</item>
+        <item>青岛</item>
+        <item>武汉</item>
+        <item>福州</item>
+        <item>上海</item>
+        <item>大连</item>
+        <item>南京</item>
+        <item>兰州</item>
+        <item>昆明</item>
+        <item>北京</item>
+        <item>成都</item>
+        <item>济南</item>
+    </string-array>
+    <string-array name="subjectArray">
+        <item>临时会议</item>
+        <item>专题会议</item>
+        <item>自定义</item>
+    </string-array><string-array name="attendeesArray">
+    <item>HR</item>
+    <item>办公室</item>
+    <item>财务</item>
+    <item>管理层</item>
+    <item>品牌</item>
+    <item>研发</item>
+    <item>自定义</item>
+</string-array>
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/yellowPrimary"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/city_shanghai"
+                    style="@style/city_label_style"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/labelLeisure"
+                    android:text="上海" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/city_fuzhou"
+                        style="@style/city_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/labelLeisure"
+                        android:text="福州" />
+
+                    <TextView
+                        android:id="@+id/city_wuhan"
+                        style="@style/city_label_style"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/labelLeisure"
+                        android:text="武汉" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/city_hangzhou"
+                    style="@style/city_label_style"
+                    android:layout_width="88dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@color/labelLeisure"
+                    android:text="杭州" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/yellowPrimary"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/city_guangzhou"
+                style="@style/city_label_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/labelLeisure"
+                android:text="广州" />
+
+            <TextView
+                android:id="@+id/city_tianjin"
+                style="@style/city_label_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/labelLeisure"
+                android:text="天津" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/city_guizhou"
+                    style="@style/city_label_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/labelLeisure"
+                    android:text="贵州" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/city_xian"
+                    style="@style/city_label_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/labelLeisure"
+                    android:text="西安" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/city_nanchang"
+                    style="@style/city_label_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/labelLeisure"
+                    android:text="南昌" />
+
+
+                <TextView
+                    android:id="@+id/city_haikou"
+                    style="@style/city_label_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/labelLeisure"
+                    android:text="海口" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@color/yellowPrimary">
+
+        <TextView
+            android:id="@+id/city_qingdao"
+            style="@style/city_label_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/labelLeisure"
+            android:text="青岛" />
+    </RelativeLayout>
+
+</LinearLayout>

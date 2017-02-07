@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background">
+
+
+    <com.hna.meetingsystem.view.HeaderLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:right="back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head">
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/meeting_room_name"
+                    style="@style/room_name_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:text="天津(Tianjin)会议室" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivDepression"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/depression" />
+
+            <TextView
+                android:id="@+id/tvDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivDepression"
+                android:text="今天没有会议,"
+                android:textColor="@color/mainBlue"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvDescription1"
+                android:text="马上预定吧!"
+                android:textColor="@color/mainBlue"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/delete_view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head" />
+
+    <LinearLayout
+        android:id="@+id/delete_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除会议"
+            android:textColor="@color/white"
+            android:textSize="56dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="1"
+            android:gravity="top">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_btn_gray"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_btn_red"
+                android:text="@string/OK"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotate_loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:loading_color="@color/colorPrimary"
+        app:loading_width="8dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/progessarea"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:id="@+id/progess"
+            android:layout_width="600dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="#33b5f2" />
+
+
+        <TextView
+            android:id="@+id/progessText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/progess"
+            android:text="会议剩余xxx分钟"
+            android:textColor="#33b5f2"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/meetinfo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/progessarea"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/name"
+            android:background="#2b8ce5" />
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/space">
+
+
+            <TextView
+                android:id="@+id/part"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/part_icon"
+                android:drawablePadding="15dp"
+                android:text="人力"
+                android:textColor="#2b8ce5"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/meeting_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ems="5"
+                android:singleLine="true"
+                android:textColor="#2b8ce5"
+                android:textSize="72sp"
+                tools:text="临时会议" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:singleLine="true"
+            android:textColor="#2b8ce5"
+            android:textSize="120dp"
+            tools:text="海航生态系统"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="70dp"
+        android:text=">展开"
+        android:textColor="#2b8ce5"
+        android:textSize="40sp" />
+</RelativeLayout>

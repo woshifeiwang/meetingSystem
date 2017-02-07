@@ -1,0 +1,211 @@
+{
+  "citys": [
+    {
+      "id": 1,
+      "name": "海口",
+      "roomNumber": "10010",
+      "address": "生态科技(南区)",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 2,
+      "name": "西安",
+      "roomNumber": "10011",
+      "address": "生态科技(南区)",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 3,
+      "name": "贵州",
+      "roomNumber": "10012",
+      "address": "生态科技(南区)",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 4,
+      "name": "天津",
+      "roomNumber": "10013",
+      "address": "生态科技(南区)",
+      "devices": "012",
+      "capacity": 10,
+      "used": false
+    },
+    {
+      "id": 5,
+      "name": "南昌",
+      "roomNumber": "10014",
+      "address": "生态科技(南区)",
+      "devices": "012",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 6,
+      "name": "广州",
+      "roomNumber": "10015",
+      "address": "生态科技(南区)",
+      "devices": "012",
+      "capacity": 8,
+      "used": false
+    },
+    {
+      "id": 7,
+      "name": "郑州",
+      "roomNumber": "10016",
+      "address": "海航通信(南区)",
+      "devices": "012",
+      "capacity": 5,
+      "used": false
+    },
+    {
+      "id": 8,
+      "name": "长沙",
+      "roomNumber": "10017",
+      "address": "海航通信(南区)",
+      "devices": "03",
+      "capacity": 5,
+      "used": false
+    },
+    {
+      "id": 9,
+      "name": "重庆",
+      "roomNumber": "10018",
+      "address": "海航通信(南区)",
+      "devices": "012",
+      "capacity": 12,
+      "used": false
+    },
+    {
+      "id": 10,
+      "name": "太原",
+      "roomNumber": "10019",
+      "address": "海航通信(南区)",
+      "devices": "",
+      "capacity": 5,
+      "used": false
+    },
+    {
+      "id": 11,
+      "name": "沈阳",
+      "roomNumber": "10020",
+      "address": "海航通信(南区)",
+      "devices": "",
+      "capacity": 5,
+      "used": false
+    },
+    {
+      "id": 12,
+      "name": "杭州",
+      "roomNumber": "10021",
+      "address": "国付宝(北区)东",
+      "devices": "012",
+      "capacity": 10,
+      "used": false
+    },
+    {
+      "id": 13,
+      "name": "青岛",
+      "roomNumber": "10022",
+      "address": "国付宝(北区)东",
+      "devices": "",
+      "capacity": 10,
+      "used": false
+    },
+    {
+      "id": 14,
+      "name": "武汉",
+      "roomNumber": "10023",
+      "address": "国付宝(北区)东",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 15,
+      "name": "福州",
+      "roomNumber": "10024",
+      "address": "国付宝(北区)东",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 16,
+      "name": "上海",
+      "roomNumber": "10025",
+      "address": "国付宝(北区)东",
+      "devices": "012",
+      "capacity": 30,
+      "used": false
+    },
+    {
+      "id": 17,
+      "name": "大连",
+      "roomNumber": "10026",
+      "address": "国付宝(北区)西",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 18,
+      "name": "南京",
+      "roomNumber": "10027",
+      "address": "国付宝(北区)西",
+      "devices": "",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 19,
+      "name": "兰州",
+      "roomNumber": "10028",
+      "address": "国付宝(北区)西",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 20,
+      "name": "昆明",
+      "roomNumber": "10029",
+      "address": "国付宝(北区)西",
+      "devices": "3",
+      "capacity": 6,
+      "used": false
+    },
+    {
+      "id": 21,
+      "name": "北京",
+      "roomNumber": "10030",
+      "address": "国付宝(北区)西",
+      "devices": "012",
+      "capacity": 30,
+      "used": false
+    },
+    {
+      "id": 22,
+      "name": "成都",
+      "roomNumber": "10031",
+      "address": "国付宝(北区)西",
+      "devices": "",
+      "capacity": 5,
+      "used": false
+    },
+    {
+      "id": 23,
+      "name": "济南",
+      "roomNumber": "10032",
+      "address": "海航通信(南区)",
+      "devices": "3",
+      "capacity": 4,
+      "used": false
+    }
+  ]
+}

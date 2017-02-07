@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="45dp"
+            style="@style/timeLineText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9:00" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/timeLineText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="10:00" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/timeLineText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="11:00" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/timeLineText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="12:00" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/timeLineText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="13:00" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bg_am"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_marginLeft="45dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/time_9"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line" />
+
+        <ImageView
+            android:id="@+id/time_91"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line2" />
+
+        <ImageView
+            android:id="@+id/time_10"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line" />
+
+        <ImageView
+            android:id="@+id/time_101"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line2" />
+
+        <ImageView
+            android:id="@+id/time_11"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line" />
+
+        <ImageView
+            android:id="@+id/time_111"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line2" />
+        <ImageView
+            android:id="@+id/time_12"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line" />
+
+
+        <ImageView
+            android:id="@+id/time_12_1"
+            android:layout_width="0dp"
+            android:paddingLeft="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selectable_time_line2" />
+
+        <View
+            android:layout_width="0dp"
+            android:background="#E8DEDD"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_fragment">
+
+    <!-- <RelativeLayout
+         android:id="@+id/title_head"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:gravity="center_vertical">
+
+         <com.hna.meetingsystem.view.HeaderLayout
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             custom:right="none">
+
+         </com.hna.meetingsystem.view.HeaderLayout>
+
+         &lt;!&ndash;<ImageView
+             android:id="@+id/title_btn_skip"
+             android:layout_width="160dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="32dp"
+             android:src="@drawable/icon_schedule_detail" />&ndash;&gt;
+     </RelativeLayout>-->
+    <com.hna.meetingsystem.view.MarqueeText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#2b8ce5"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:layout_below="@id/tvTitle"
+        android:id="@+id/home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- <TextView
+             android:id="@+id/tv_current_city_name"
+             style="@style/room_name_label_style"
+             android:layout_width="wrap_content"
+             android:layout_height="48dp"
+             tools:text="天津（Tianjin）" />-->
+
+        <LinearLayout
+            android:id="@+id/rlOrderHalfContainer"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_meetingstatus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="100sp"
+                    android:layout_gravity="center"
+                    android:textColor="#E84C3D"
+                    android:gravity="center"
+                    android:text="空闲中"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ProgressBar
+                        android:id="@+id/pb_lasttime"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:progress="45"
+                        android:visibility="gone"
+                        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tv_progress_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ED7367"
+                        android:textSize="15dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:id="@+id/ll_meeting_predate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_current_meeting"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="当前会议：   "
+                        android:textColor="#E84C3D"
+                        android:textSize="27sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D4D2D3"
+                    />
+                <LinearLayout
+                    android:id="@+id/rlOrderCureentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:background="#D4D2D3"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvCurrentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="大数据会议预立项"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/meeting_present_name"
+                        android:textColor="#000000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tvCurrentTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/meeting_present_time"
+                        android:text="12:20-13:50"
+                        android:textColor="#000000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tv_attendeeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/meeting_present_person"
+                        android:text="潇洒哥"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/btn_left"
+                        android:textSize="@dimen/btn_font_size"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_meeting_details"
+                        />
+
+
+                    <Button
+                        android:id="@+id/btn_right"
+                        android:textSize="@dimen/btn_font_size"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_meeting_reserve"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<LinearLayout
+                android:id="@+id/rlOrderNextContainer"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                    <TextView
+                    android:id="@+id/tvNextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="35dp"
+                    android:text="大数据会议预立项"
+                    android:textColor="#33b5f2"
+                    android:textSize="25sp" />
+
+                     <TextView
+                    android:id="@+id/tvNextDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_horizontal"
+                    android:text="12:20-13:50"
+                    android:textColor="#33b5f2"
+                    android:textSize="25sp" />
+
+                     <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="潇洒哥"
+                    android:textColor="#33b5f2"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"/>
+                </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <include
+        android:id="@+id/rlCurrentMeetFragment"
+        layout="@layout/fragment_main_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/fancyContainer"
+        layout="@layout/fragment_small_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"></FrameLayout>
+
+
+    <!-- <include
+         android:id="@+id/quick_predetermine_view"
+         layout="@layout/layout_quick_predetermine"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/title_head" />-->
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:loading_color="@color/mainRed"
+        app:loading_width="10dp" />
+</RelativeLayout>

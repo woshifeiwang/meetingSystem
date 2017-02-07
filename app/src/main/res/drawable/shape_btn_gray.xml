@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 圆角 radius-->
+    <corners android:radius="4dp" />
+
+
+    <!-- 大小 size-->
+    <size
+        android:width="128dp"
+        android:height="64dp" /><!-- 宽度和高度 -->
+
+    <!-- 填充 solid-->
+    <solid android:color="@color/gary" /><!-- 填充的颜色 -->
+
+</shape>

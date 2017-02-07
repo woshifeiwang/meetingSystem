@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#33b5f2"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        android:text="海口"
+        />
+    <ImageView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/tv_city"
+        android:textColor="#33b5f2"
+        android:textSize="20sp"
+        android:src="@drawable/depression"
+        />
+</RelativeLayout>
